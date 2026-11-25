@@ -1,0 +1,9 @@
+BEFORE:
+qdisc netem 801c: root refcnt 9 limit 1000 delay 100ms loss 1% rate 20Mbit seed 15334529132504613054
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+
+AFTER:
+qdisc netem 801c: root refcnt 9 limit 1000 delay 100ms loss 1% rate 20Mbit seed 15334529132504613054
+ Sent 6245929 bytes 4141 pkt (dropped 40, overlimits 0 requeues 0) 
+ backlog 10797b 10p requeues 0
